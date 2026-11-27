@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F5F9"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BIOVERIFY"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#172554"
+            android:gravity="center"
+            android:layout_marginTop="28dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verificación biométrica facial"
+            android:textSize="15sp"
+            android:textColor="#64748B"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="35dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar perfil"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#172554"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvEmptyProfiles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Todavía no hay perfiles registrados.\n\nCrea uno para comenzar a utilizar BioVerify."
+            android:textSize="15sp"
+            android:textColor="#64748B"
+            android:gravity="center"
+            android:padding="20dp"
+            android:visibility="gone"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/profileContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <Button
+            android:id="@+id/btnAddProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="55dp"
+            android:text="+ Agregar perfil"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#0F766E"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/tvSelectionStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#DC2626"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BioVerify · Almacenamiento local protegido"
+            android:textSize="12sp"
+            android:textColor="#94A3B8"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F5F9"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="26dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BIOVERIFY"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#172554"
+            android:gravity="center"
+            android:layout_marginTop="35dp"/>
+
+        <TextView
+            android:id="@+id/tvDeleteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar perfil"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#B91C1C"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para proteger tu información, confirma tu identidad introduciendo la contraseña de este perfil."
+            android:textSize="15sp"
+            android:textColor="#475569"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"/>
+
+        <EditText
+            android:id="@+id/etDeletePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña del perfil"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnVerifyDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="54dp"
+            android:text="Verificar y continuar"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#B91C1C"/>
+
+        <TextView
+            android:id="@+id/tvDeleteStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#B91C1C"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="22dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F1F5F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear perfil"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#172554"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Configura tu información para utilizar BioVerify."
+            android:textSize="15sp"
+            android:textColor="#475569"
+            android:gravity="center"
+            android:layout_marginBottom="28dp"/>
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLength="80"
+            android:singleLine="true"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de usuario"
+            android:inputType="text"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico (opcional)"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consentimiento para el tratamiento biométrico"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#172554"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BioVerify utilizará imágenes de tu rostro para generar representaciones biométricas destinadas a verificar tu identidad dentro de esta aplicación. Los datos del perfil y las plantillas biométricas se almacenarán cifrados en este dispositivo. Esta versión funciona localmente y no transmite esos datos a un servidor. La verificación puede producir errores y no constituye una identificación legal. Al aceptar, autorizas el tratamiento de estos datos para la finalidad descrita."
+            android:textSize="14sp"
+            android:textColor="#334155"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="14dp"/>
+
+        <CheckBox
+            android:id="@+id/cbConsent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="He leído y acepto el consentimiento biométrico."
+            android:textColor="#172554"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/tvProfileStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#B91C1C"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="52dp"
+            android:text="Crear perfil"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2563EB"/>
+
+    </LinearLayout>
+
+</ScrollView>
